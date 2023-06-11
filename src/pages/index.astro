@@ -5,12 +5,12 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+//import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import LatestPosts from '~/components/blog/LatestPosts.astro';
+//import Content from '~/components/widgets/Content.astro';
+//import LatestPosts from '~/components/blog/LatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
+//import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const meta = {
@@ -24,21 +24,19 @@ const meta = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
-    callToAction2={{ text: 'Learn more', href: '#features' }}
-    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
+    callToAction={{ text: 'Check out our Instagram!', href: 'https://www.instagram.com/autograph.eg/', icon: 'tabler:brand-instagram' }}
+    
+    image={{ src: import('~/assets/images/autograph logo3.jpg'), alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 2.0</span> + Tailwind CSS    </Fragment>
+      Enhance you Wedding Experience <span class="hidden xl:inline">with</span>
+      <span class="text-accent dark:text-white highlight"></span>  Autograph    </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 2.0 +
-        Tailwind CSS.</span
+        <span class="font-semibold">Autograph</span> is a great way to keep the memories of your special day!</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span> Suitable for Startups,
-      Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.
+      <span class="block mb-1 sm:hidden font-bold text-blue-600"></span> 
     </Fragment>
   </Hero>
 
@@ -50,47 +48,35 @@ const meta = {
 
   <Features
     highlight="Features"
-    title="What you get with AstroWind"
-    subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
+    title="What you get with Autograph"
+    subtitle="You will be able to get all of our features to enhance your wedding experience!"
     items={[
       [
         {
-          title: 'Astro + Tailwind CSS Integration',
+          title: 'Easy Picture Taking',
           description:
-            'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-          icon: 'tabler:brand-tailwind',
+            'A quick and easy way to take pictures and save them.',
+          icon: 'tabler:camera',
         },
         {
-          title: 'Ready-to-use Components',
+          title: 'Express Your Creative Side!',
           description:
-            'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-          icon: 'tabler:components',
-        },
-        {
-          title: 'Best Practices',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:list-check',
+            'Draw and write whatever you want on your pictures to leave for the groom and bride!',
+          icon: 'tabler:brush',
         },
       ],
       [
         {
-          title: 'Excellent Page Speed',
+          title: 'Record Videos',
           description:
-            'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-          icon: 'tabler:rocket',
+            'Leave a lovely video to congratulate the lovely couple!',
+          icon: 'tabler:video',
         },
         {
-          title: 'Search Engine Optimization (SEO)',
+          title: 'Boomerangs',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:arrows-right-left',
-        },
-        {
-          title: 'Open to new ideas and contributions',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:bulb',
+            'Create the perfect loop!',
+          icon: 'tabler:refresh',
         },
       ],
     ]}
@@ -98,7 +84,7 @@ const meta = {
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     highlight="Inside template"
     title="And what's inside? ..."
     items={[
@@ -128,11 +114,11 @@ const meta = {
       Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod
       tacimates.
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isReversed
     isAfterContent
     items={[
@@ -159,30 +145,31 @@ const meta = {
       src: import('~/assets/images/vintage.jpg'),
       alt: 'Vintage Image',
     }}
-  />
+  /> -->
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Let your dream wedding day become even better!"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Contact Us!</span>',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.',
+          'Please call us at _______ to learn more.',
+        icon: 'tabler:phone',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Schedule the Date!</em>',
+        description:
+          'Let us know what date you want us to come!',
+        icon: 'tabler:calendar',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Pick a Package!</span>',
+        description:
+          'Select from our many packages and see what would be the best for you!',
+          
         icon: 'tabler:package',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
-        icon: 'tabler:paint',
       },
       {
         title: 'Ready!',
@@ -197,7 +184,7 @@ const meta = {
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Most used widgets"
     subtitle="Provides frequently used components for building websites using Tailwind CSS"
     highlight="Components"
@@ -257,11 +244,11 @@ const meta = {
         icon: 'icon-park:page-template',
       },
     ]}
-  />
+  /> -->
 
   <!-- HighlightedPosts Widget ******* -->
 
-  <LatestPosts
+  <!-- <LatestPosts
     title="Find out more content in our Blog"
     information={`The blog is used to display AstroWind documentation.
                         Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
@@ -273,13 +260,12 @@ const meta = {
       'useful-resources-to-create-websites.md',
       'astrowind-template-in-depth.md',
     ]}
-  />
+  /> -->
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar."
     highlight="FAQs"
     items={[
       [
@@ -321,31 +307,31 @@ const meta = {
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
+  <!-- <Stats
     items={[
-      { name: 'Downloads', value: '132K' },
+      { name: 'Weddings', value: '200' },
       { name: 'Stars', value: '24.8K' },
       { name: 'Forks', value: '10.3K' },
       { name: 'Users', value: '48.4K' },
     ]}
-  />
+  /> -->
 
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
     callToAction={{
-      text: 'Get template',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:download',
+      text: 'Schedule',
+      href: '#',
+      icon: 'tabler:calendar',
     }}
   >
     <Fragment slot="title">
-      Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+       <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Get Your Autograph On!</span>
     </Fragment>
 
-    <Fragment slot="subtitle">
+    <!-- <Fragment slot="subtitle">
       Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
       waste more time! :P
-    </Fragment>
+    </Fragment> -->
   </CallToAction>
 </Layout>

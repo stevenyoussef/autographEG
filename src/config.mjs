@@ -1,15 +1,15 @@
-import defaultImage from './assets/images/default.png';
+import defaultImage from './assets/images/small logo.jpg';
 
 const CONFIG = {
-  name: 'AstroWind',
+  name: 'Autograph',
 
   origin: 'https://astrowind.vercel.app',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'AstroWind — Free template for create a website with Astro + Tailwind CSS',
+  title: 'Autograph',
   description:
-    '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
+    'A Way to remember your Wedding.',
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
