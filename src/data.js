@@ -16,7 +16,7 @@ export const headerData = {
     },
   ],
   actions: [
-    { type: 'button', text: 'Schedule', href: '#' }
+    { type: 'button', text: 'Login', href: 'login' }
   ],
 };
   

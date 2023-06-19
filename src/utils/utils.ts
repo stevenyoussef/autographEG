@@ -19,3 +19,14 @@ export const trim = (str = '', ch?: string) => {
   while (end > start && str[end - 1] === ch) --end;
   return start > 0 || end < str.length ? str.substring(start, end) : str;
 };
+/* export function isLoggedIn(request: Request): boolean {
+  // Implement your logic to check if the user is authenticated
+  // based on the request (e.g., checking cookies or headers)
+  return true; // or false, depending on the authentication status
+} */
+export function checkCredentials(email: string, password: string): boolean {
+  const validEmail = "user@example.com";
+  const validPassword = "password123";
+
+  return email === validEmail && password === validPassword;
+}
